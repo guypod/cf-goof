@@ -22,6 +22,8 @@ var marked         = require('marked');
 var app    = express();
 var routes = require('./routes');
 
+var secretToken = 'f9bc3205-bba6-49a0-93db-9fb93741bc16';
+
 // all environments
 app.set('port', process.env.PORT || 3001);
 app.engine('ejs', engine);
